@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,500|Material+Icons&subset=cyrillic,cyrillic-ext');
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f1f1f1;
+    margin: 0 0 0 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+header {
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.navbar-static-top {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 78px;
+    border-bottom: solid 2px #8ac349;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar {
+    margin: 0 auto 0;
+    max-width: 1170px;
+    min-width: 756px;
+    height: 100%;
+    padding: 0 30px 0 30px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    object-fit: contain;
+    margin-left: 0;
+    padding-top: 8px;
+}
+
+#logo:hover {
+    opacity: 0.7;
+}
+
+
+.navbar ul {
+    text-align: center;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #6e6e6e;
+    padding: 0 18px 0 18px;
+}
+
+.navbar a:hover, .navbar a:active {
+    color: #8ac349;
+}
+.navbar > .login-bar > ul > li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar > .login-bar > ul > li > .login-button {
+    padding: 6px 16px 6px 16px;
+}
+
+.navbar > .login-bar > ul > li > .login-button:hover {
+    color: #000 !important;
+    background-color: #8ac349;
+    padding: 6px 16px 6px 16px;
+    border-radius: 25px;
+}
+
+
+.navbar > .login-bar > ul > li > .register-button {
+    background-color: #8ac349;
+    padding: 6px 16px 6px 16px;
+    color: #fff !important;
+    border-radius: 25px;
+}
+
+.navbar > .login-bar > ul > li > .register-button:hover {
+    background: none;
+    padding: 6px 16px 6px 16px;
+    color: #6e6e6e !important;
+}
+
+.slider {
+    margin-top: 80px;
+    overflow: hidden;
+    width: 100%;
+    height: 380px;
+    border-bottom: solid 2px #8ac349;
+}
+
+.slider > .slider-image {
+    background-image: url("../img/slider/2.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1170px;
+    min-width: 756px;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+}
+
+.container > .container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container > .container-header > h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.view-more-button, .view-more-button a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #526cfd;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.container > .container-content {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container > .books-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.books-content img {
+    box-shadow: 0px 0px 5px #888888;
+    transition: all .3s ease;
+}
+
+.books-content img:hover {
+    box-shadow: 0px 0px 10px #888888;
+    transform: translate(0) scale(1.10);
+    z-index: 0;
+}
+
+.container > .container-content > .books-item {
+    padding: 15px 20px 0px 15px !important;
+}
+
+.container-content > .random-book {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container-content > .random-book > .random-book-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-content > .random-book > .random-book-actions > .random-book-action {
+    margin: 15px 0 15px 0;
+}
+
+.container-content > .random-book > .random-book-actions > .random-book-action > img {
+    transition: all .3s ease;
+}
+
+.container-content > .random-book > .random-book-actions > .random-book-action > img:hover {
+    transform: translate(0) scale(1.10);
+    backface-visibility: hidden;
+}
+
+.container-left {
+    width: 868px;
+}
+
+.container-right {
+    width: 268px;
+}
+
+.container-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.genres ul li {
+    background: url('../img/Bullet.png') no-repeat 12px 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 9px 10px 9px 24px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.genres ul li:last-child {
+    border: none;
+}
+
+.genres a {
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+.genres a:hover, .genres a:focus, .genres a:active {
+    color: #67a3fd !important;
+}
+
+.genres > .link-see-all {
+    text-align: center;
+}
+
+.genres > .link-see-all a {
+    color: #526cfd;
+    text-shadow: 1px 1px 3px #b4b4b4;
+}
+
+footer {
+    background-color: #fff;
+    margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    border-top: 2px solid #8ac249;
+    position: relative;
+}
+
+footer > .footer-bottom {
+    padding: 5px 0;
+    background-color: #8ac249;
+    width: 100%;
+    height: 20px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    display: block;
+    height: 34px;
+    width: 210px;
+    font-size: 13px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    border-color: #95c365;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px rgba(106, 195, 40, 0.6);
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover {
+    border-color: #95c365;
+}
+
+
+
