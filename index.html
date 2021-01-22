@@ -1,98 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bulgarian Library - Твоята виртуална библиотека за мнения и ревюта на книги</title>
     <link href="css/main.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/icons/book-icon.png">
-    <script src="https://kit.fontawesome.com/30367b6f00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
 </head>
 <body>
 <!-- HEADER AND NAVIGATION START -->
 <header>
     <div class="navbar-static-top">
-        <div class="navbar">
+        <div class="navbar clearfix">
             <div id="logo">
                 <a href=""><img src="img/Logo.png" alt="site logo"></a>
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="">Начало</a></li>
+            <div class="navbar-items">
+                <ul class="clearfix">
+                    <li><a href="/">Начало</a></li>
                     <li><a href="">Книги</a></li>
                     <li><a href="">Категории</a></li>
                     <li><a href="">За нас</a></li>
-                </ul>
-            </nav>
 
-            <div class="login-bar">
-                <ul>
-                    <li><a href="" class="login-button">Вход</a></li>
-                    <li><a href="" class="register-button">Регистрация</a></li>
+                    <div class="right">
+                        <li><a href="#" id="toggle-login" class="btn">Вход</a></li>
+                        <li><a href="#" id="toggle-registration" class="btn">Регистрация</a></li>
+                    </div>
                 </ul>
             </div>
+
+            <i class="fas fa-bars toggle-nav"></i>
         </div>
     </div>
 </header>
 
+<!-- SLIDER -->
 <div class="slider">
     <div class="slider-image">
 
     </div>
 </div>
 
-<div class="content">
+<!-- SCROLL UP BUTTON -->
+<div class="scroll-up">
+    <span class="glyphicon glyphicon-arrow-up" id="button--scroll-up"></span>
+</div>
+
+
+<!-- WRAPPER START -->
+<div class="wrapper clearfix">
 
     <!-- LEFT SIDE -->
     <div class="left">
 
-        <div class="container container-left ">
+        <div class="container container-left">
             <div class="container-header">
                 <h1>Най-нови книги</h1>
                 <div class="view-more-button"><a href="#">Виж още <img
-                        src="img/ic_keyboard_arrow_right_black_24dp_1x.png"></a></div>
+                        src="img/ic_keyboard_arrow_right_black_24dp_1x.png" alt="Show more"></a></div>
             </div>
 
             <div class="container-content books-content container-content-center">
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book1/Book%20%231.png"></a>
+                    <a href="#"><img src="img/tempBooks/book1/Book%20%231.png" alt="book 1"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book1/Book%20%232.png"></a>
+                    <a href="#"><img src="img/tempBooks/book1/Book%20%232.png" alt="book 2"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book1/Book%20%233.png"></a>
+                    <a href="#"><img src="img/tempBooks/book1/Book%20%233.png" alt="book 3"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book1/Book%20%234.png"></a>
+                    <a href="#"><img src="img/tempBooks/book1/Book%20%234.png" alt="book 4"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book1/Book%20%235.png"></a>
+                    <a href="#"><img src="img/tempBooks/book1/Book%20%235.png" alt="book 5"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book2/Book%20%231.png"></a>
+                    <a href="#"><img src="img/tempBooks/book2/Book%20%231.png" alt="book 6"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book2/Book%20%232.png"></a>
+                    <a href="#"><img src="img/tempBooks/book2/Book%20%232.png" alt="book 7"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book2/Book%20%233.png"></a>
+                    <a href="#"><img src="img/tempBooks/book2/Book%20%233.png" alt="book 8"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book2/Book%20%234.png"></a>
+                    <a href="#"><img src="img/tempBooks/book2/Book%20%234.png" alt="book 9"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book2/Book%20%235.png"></a>
+                    <a href="#"><img src="img/tempBooks/book2/Book%20%235.png" alt="book 10"></a>
                 </div>
             </div>
         </div>
@@ -101,28 +109,28 @@
             <div class="container-header">
                 <h1>Най-популярни в момента</h1>
                 <div class="view-more-button"><a href="#">Виж още <img
-                        src="img/ic_keyboard_arrow_right_black_24dp_1x.png"></a></div>
+                        src="img/ic_keyboard_arrow_right_black_24dp_1x.png" alt="Show more"></a></div>
             </div>
 
             <div class="container-content books-content container-content-center">
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book3/Book%20%231.png"></a>
+                    <a href="#"><img src="img/tempBooks/book3/Book%20%231.png" alt="book 1"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book3/Book%20%232.png"></a>
+                    <a href="#"><img src="img/tempBooks/book3/Book%20%232.png" alt="book 2"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book3/Book%20%233.png"></a>
+                    <a href="#"><img src="img/tempBooks/book3/Book%20%233.png" alt="book 3"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book3/Book%20%234.png"></a>
+                    <a href="#"><img src="img/tempBooks/book3/Book%20%234.png" alt="book 4"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book3/Book%20%235.png"></a>
+                    <a href="#"><img src="img/tempBooks/book3/Book%20%235.png" alt="book 5"></a>
                 </div>
 
             </div>
@@ -132,28 +140,28 @@
             <div class="container-header">
                 <h1>Най-висок рейтинг</h1>
                 <div class="view-more-button"><a href="#">Към класацията <img
-                        src="img/ic_keyboard_arrow_right_black_24dp_1x.png"></a></div>
+                        src="img/ic_keyboard_arrow_right_black_24dp_1x.png" alt="Show more"></a></div>
             </div>
 
             <div class="container-content books-content container-content-center">
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book4/Book%20%231.png"></a>
+                    <a href="#"><img src="img/tempBooks/book4/Book%20%231.png" alt="book 1"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book4/Book%20%232.png"></a>
+                    <a href="#"><img src="img/tempBooks/book4/Book%20%232.png" alt="book 2"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book4/Book%20%233.png"></a>
+                    <a href="#"><img src="img/tempBooks/book4/Book%20%233.png" alt="book 3"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book4/Book%20%234.png"></a>
+                    <a href="#"><img src="img/tempBooks/book4/Book%20%234.png" alt="book 4"></a>
                 </div>
 
                 <div class="books-item">
-                    <a href="#"><img src="img/tempBooks/book4/Book%20%235.png"></a>
+                    <a href="#"><img src="img/tempBooks/book4/Book%20%235.png" alt="book 5"></a>
                 </div>
 
             </div>
@@ -162,7 +170,7 @@
 
     </div>
 
-    <!-- RIGHT SIDE -->
+    <!-- RIGHT SIDE START-->
     <div class="right">
 
         <div class="container container-right">
@@ -171,7 +179,7 @@
             </div>
 
             <div class="container-content container-content-center">
-                <div class="form-group search">
+                <div id="search-bar">
                     <input type="text" placeholder="Заглавие на книга...">
                 </div>
             </div>
@@ -206,8 +214,10 @@
                     <a href="#"><img src="img/demorand.png" alt="random-book"></a>
                     <div class="random-book-actions">
                         <div class="random-book-action"><a href="#"><img src="img/refresh.png" alt="refresh"></a></div>
-                        <div class="random-book-action"><a href="#"><img src="img/fav-normal.png" alt="favorite"></a></div>
-                        <div class="random-book-action"><a href="#"><img src="img/read-later.png" alt="read-later"></a></div>
+                        <div class="random-book-action"><a href="#"><img src="img/fav-normal.png" alt="favorite"
+                                                                         class="heart"></a></div>
+                        <div class="random-book-action"><a href="#"><img src="img/read-later.png" alt="read-later"
+                                                                         class="read"></a></div>
                         <div class="random-book-action"><a href="#"><img src="img/dots.png" alt="dots"></a></div>
                     </div>
                 </div>
@@ -215,17 +225,187 @@
         </div>
 
     </div>
+    <!-- RIGHT SIDE END-->
+
 </div>
+
 
 <div style="clear: both;"></div>
 
+<!-- FOOTER START-->
 <footer>
-    sdas
-    <div class="footer-bottom">
-        Bulgarian Library © 2020 Всички права запазени.
+    <div class="footer-content">
+        <div class="footer-container">
+            <h4>За Bulgarian Library</h4>
+
+            <p class="footer-container-item"><a href="#">Начало</a></p>
+            <p class="footer-container-item"><a href="#">Категории</a></p>
+            <p class="footer-container-item"><a href="#">Списъци</a></p>
+            <p class="footer-container-item"><a href="#">Контакти</a></p>
+        </div>
+
+        <div class="footer-container">
+            <div class="breakpoint"></div>
+
+            <p class="footer-container-item"><a href="#">Карта на сайта</a></p>
+            <p class="footer-container-item"><a href="#">Общи условия</a></p>
+            <p class="footer-container-item"><a href="#">Лични данни</a></p>
+            <p class="footer-container-item"><a href="#">Реклама</a></p>
+        </div>
+
+        <div class="footer-container">
+            <h4>Последвай ни</h4>
+
+            <p class="footer-container-item"><a href="#">Facebook</a></p>
+            <p class="footer-container-item"><a href="#">Google Plus</a></p>
+            <p class="footer-container-item"><a href="#">YouTube</a></p>
+            <p class="footer-container-item"><a href="#">Instagram</a></p>
+        </div>
+
+        <div class="footer-container footer-contacts">
+            <h4>Информационен бюлетин</h4>
+
+            <form>
+                <input type="email" name="subscribe" placeholder="Въведи своя имейл и се абонирай"
+                       class="input--subscribe">
+            </form>
+
+            <p class="footer-container-item"><span class="glyphicon glyphicon-earphone"></span> 0876 88 55 22</p>
+            <p class="footer-container-item"><span class="glyphicon glyphicon-envelope"></span>
+                support@bulgarianlibrary.com</p>
+        </div>
+
+
     </div>
+
 </footer>
 
-<script src="js/jClone.js"></script>
+<div class="footer-bottom">
+    Bulgarian Library © 2021 Всички права запазени.
+</div>
+<!-- FOOTER END-->
+
+<!-- LOGIN MODAL -->
+<div id="login-modal" class="auth-modal">
+
+    <div class="flexbox">
+        <div class="auth-modal-bg">
+            <img src="img/loginbg.png" alt="login background">
+        </div>
+
+        <div class="center-content">
+            <div class="auth-modal-content">
+                <h1 class="title">Вход</h1>
+
+
+                <div class="social-media-auth-buttons">
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Facebook-login.png" alt="Facebook icon"></a>
+                    </div>
+
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Twitter-login.png" alt="Twitter icon"></a>
+                    </div>
+
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Google%20Plus-login.png" alt="Google Plus icon"></a>
+                    </div>
+
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Email-login.png" alt="Gmail icon"></a>
+                    </div>
+                </div>
+
+                <br>
+
+                <form class="form-area">
+
+                    <div class="input-field">
+                        <input type="email" name="email" placeholder="E-mail адрес..." required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" placeholder="Парола ..." required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="button" class="btn-long" value="Вход">
+                    </div>
+
+                </form>
+                <p>Ако още нямате акаунт моля, <a href="" style="color:#526cfd;text-align: center;">регистрирайте се от тук</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- REGISTRATION MODAL -->
+<div id="register-modal" class="auth-modal">
+
+    <div class="flexbox">
+        <div class="auth-modal-bg">
+            <img src="img/regbg.png" alt="registration background">
+        </div>
+
+        <div class="center-content">
+            <div class="auth-modal-content">
+                <h1 class="title">Регистрация</h1>
+
+                <br>
+
+                <form class="form-area">
+                    <div class="input-field">
+                        <input type="text" name="username" placeholder="Потребителско име..." required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="email" name="email" placeholder="E-mail адрес..." required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" placeholder="Парола ..." required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password-repeat" placeholder="Повтори парола ..." required>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="button" class="btn-long" value="Вход">
+                    </div>
+                </form>
+
+                <div class="social-media-auth-buttons">
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Facebook-login.png" alt="Facebook icon"></a>
+                    </div>
+
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Twitter-login.png" alt="Twitter icon"></a>
+                    </div>
+
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Google%20Plus-login.png" alt="Google Plus icon"></a>
+                    </div>
+
+                    <div class="social-media-auth-button">
+                        <a href=""><img src="img/Email-login.png" alt="Gmail icon"></a>
+                    </div>
+                </div>
+
+                <br>
+
+                <p>Ако още нямате акаунт моля, <a href="" style="color:#526cfd;text-align: center;">регистрирайте се от тук</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://kit.fontawesome.com/30367b6f00.js" crossorigin="anonymous"></script>
+<script src="js/lib.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

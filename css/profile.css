@@ -1,0 +1,151 @@
+.user-area {
+
+}
+
+.user-area > li {
+    padding-right: 30px;
+    position: relative;
+}
+
+.user-area > li a {
+    font-family: "Roboto Slab", sans-serif;
+    color: #000;
+    text-transform: none;
+    padding: 0 0 0 0;
+}
+
+.user-area > li a:hover, .user-area > li a:active {
+    border: none !important;
+    padding: 0 0 0 0 !important;
+}
+
+.user-area li > img {
+    transition: ease-in-out .3s;
+}
+
+
+.user-area li > img:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.notification-counter {
+    position: absolute;
+    top: -10px;
+    margin-left: 6px;
+    z-index: 1;
+}
+
+.notification-counter-fixer {
+    background-color: #526cfd;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1px 4px;
+    background-clip: padding-box;
+    display: inline-block;
+    font-size: 10px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1.3;
+    min-height: 15px;
+    min-width: 25px;
+}
+
+.user-area .avatar {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.user-area > li > .dropdown-menu {
+    background-color: #fff;
+    border: 0 solid #888888;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 3px;
+    padding: 3px 0 3px 0;
+    width: 268px;
+    position: fixed;
+    margin-top: -7px;
+    margin-left: -120px;
+    z-index: 2;
+    word-wrap: break-word;
+    display: none;
+}
+
+.user-area > li > .dropdown-menu > li a{
+    text-align: center;
+}
+
+.user-area #user-panel {
+    width: auto !important;
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.user-area #user-panel > li > a {
+    text-transform: uppercase;
+}
+
+.dropdown-menu > li {
+    display: block !important;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 2px 7px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active, .dropdown-menu > li > a > .active {
+    color: #8ac249;
+    padding: 2px 7px !important;
+    border: none !important;
+}
+
+.dropdown-header {
+    padding: 4px 20px;
+    font-size: 13px !important;
+    line-height: 1.42857143;
+    color: #81c532;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 400 !important;
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 3px 0;
+    overflow: hidden;
+    background-color: #dedede;
+}
+
+.profile-area {
+    width: 100%;
+}
+
+.profile-area .container-left {
+    min-width: 268px;
+}
+
+.profile-area .container-left .avatar {
+    width: 225px;
+    height: 225px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 3px;
+}
+
+.profile-area .container-right {
+   max-width: 868px;
+}
+
+.profile-area .container .container-content {
+    padding-top: 10px;
+}
